@@ -6,7 +6,7 @@ void main() {
   int? i = int.parse(stdin.readLineSync()!);
   if (i > People.length - 1) {
     print('Out of range');
-  } else if (i < People.length) {
+  } else if (i < 0) {
     print('Beneath range');
   } else {
     print(People[i]);
